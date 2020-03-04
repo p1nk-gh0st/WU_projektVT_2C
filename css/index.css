@@ -2,3 +2,34 @@
     margin: 0;
     padding: 0;
 }
+@media (min-width: 700px) {
+    nav .navbar-items {
+        display: contents;
+    }
+    #disable-this {
+        display: none;
+    }
+}
+
+nav .navbar-items {
+    display: none;
+} 
+
+.mobile-toggle a {
+    padding: 20px;
+}
+.mobile-toggle {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: #657280;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: .3s;
+}
+
+.show {
+    transform: translateY(0);
+}

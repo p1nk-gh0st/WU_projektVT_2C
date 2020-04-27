@@ -10,7 +10,7 @@
   left: 15px;
   top: 10px;
   padding: 15px 15px;
-  display: inline-block;
+  display: none;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -29,7 +29,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #000; }
+    background-color: #fff; }
 
 .hamburger-box {
   width: 40px;
@@ -44,7 +44,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -707,3 +707,9 @@
   .hamburger--vortex-r.is-active .hamburger-inner::after {
     bottom: 0;
     transform: rotate(-90deg); }
+
+    @media (max-width: 640px) {
+    .hamburger {
+      display: inline-block;
+    }
+    }

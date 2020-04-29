@@ -1,14 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'IBM Plex Sans', sans-serif;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: 'IBM Plex Sans', 'sans-serif';
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
 
 .container-Mobile {
     display: none;
 }
-@media (max-width: 640px) {
+@media (max-width: 740px) {
     .container-Desktop {
         display: none;
     }
@@ -169,4 +170,8 @@ iframe {
 
 .no-shadow {
     box-shadow: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

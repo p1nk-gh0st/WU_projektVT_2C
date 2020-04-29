@@ -1,3 +1,0 @@
-Main : #7DBCFF
-Mono chromatic : #3E5E80, #C9E3FF, #657280, #6496CC
-Analogous : #7770FF, #6683E8, #66C7E8, #70FFFE

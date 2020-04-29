@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: #2C2F33;
+    background-color: #23272A;
 }
 
 .navbar-Desktop {
@@ -93,7 +93,6 @@ h1 {
     height: 70vh;
     width: 100vw;
     text-align: center;
-    z-index: 0;
     position: absolute;
     padding-top: 90px;
     display: none;
@@ -109,6 +108,10 @@ h1 {
     color: white;
 }
 
+.mobileNav a:hover {
+    -webkit-filter: brightness(80%);
+}
+
 .show {
     display: grid;
 }
@@ -121,6 +124,7 @@ h1 {
     z-index: 4;
     position: fixed;
     width: 100%;
+    box-shadow: 3px 9px 20px 2px rgb(26, 26, 26) ; 
 }
 
 #img_01_mobile {
@@ -149,6 +153,7 @@ iframe {
 
 .no-scroll {
     overflow: hidden;
+    touch-action: none;
 }
 
 .iframe-desktop {
@@ -160,4 +165,8 @@ iframe {
 
 .title-desktop {
     font-size: 46px;
+}
+
+.no-shadow {
+    box-shadow: none;
 }

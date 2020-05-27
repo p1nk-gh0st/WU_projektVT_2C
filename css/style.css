@@ -148,6 +148,17 @@ h1 {
     border: 4px solid red;
 }
 
+#img_01_mobile_2 {
+    width: 200px;
+    height: auto;
+    align-content: center;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid red;
+}
+
 .mobileContent {
     z-index: 1;
     padding-top: 20px;
@@ -283,6 +294,163 @@ body::-webkit-scrollbar {
 }
 
 .pfp-parent {
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
+
+.pfp-parent_desktop {
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
+
+.post-container {
+text-align: center;
+align-content: center;
+display: flex;
+justify-content: center;
+justify-self: center;
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block;
+    width: 200px;
+    margin-left: 40px;
+    box-shadow: 3px 9px 20px 2px rgb(26, 26, 26);
+    border: 2px solid red;
+    border-radius: 4px; 
+}
+.post-content {
+    width: 700px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+    line-height: 35px;
+}
+.post-title {
+    font-weight: bold;
+    font-size: 200%;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text {
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    box-shadow: 3px 9px 20px 2px rgb(26, 26, 26);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.text2 {
+    font-size: 18px;
+    color: white;
+    font-weight: 300; 
+}
+
+#txt_mobile {
+    width: 350px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
+    margin-bottom: 40px;
+
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+ .hamburger {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 15px 15px;
+    display: none;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: white; 
+      -webkit-filter: brightness(100%)
+    }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: white;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+  
+  /*
+     * Squeeze
+     */
+  .hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--squeeze .hamburger-inner::before {
+      transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+    .hamburger--squeeze .hamburger-inner::after {
+      transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  
+  .hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger--squeeze.is-active .hamburger-inner::before {
+      top: 0;
+      opacity: 0;
+      transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+    .hamburger--squeeze.is-active .hamburger-inner::after {
+      bottom: 0;
+      transform: rotate(-90deg);
+      transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  
+      @media (max-width: 750px) {
+      .hamburger {
+        display: inline-block;
+      }
+      }
